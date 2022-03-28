@@ -1,0 +1,6 @@
+1>------ Build started: Project: Binary_Search, Configuration: Debug Win32 ------
+1>Linking...
+1>LINK : fatal error LNK1181: cannot open input file 'Irvine32.lib'
+1>Build log was saved at "file://c:\data\AsmBook5\examples\ch09\Binary_Search\Debug\BuildLog.htm"
+1>Binary_Search - 1 error(s), 0 warning(s)
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
