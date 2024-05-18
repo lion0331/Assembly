@@ -1,8 +1,7 @@
-TITLE Repeat Block Examples         (Repeat.asm)
+; Repeat Block Examples         (Repeat.asm)
 
 ; This program demonstrates the REPEAT, FOR,
 ; FORC, and WHILE directives.
-; Last update: 2/30/02
 
 INCLUDE Irvine32.inc
 INCLUDE Macros.inc
@@ -25,7 +24,7 @@ Delimiters LABEL BYTE
 FORC code,<@#$%^&*!<!>>
   BYTE "&code"
 ENDM
-BYTE 0  	; marks the end
+BYTE 0  			; marks the end
 
 ; Generate Fibonacci numbers up to 0FFFFh
 f1  = 1
@@ -44,7 +43,7 @@ ECHO ---------------------------------------------------------
 
 iVal = 10
 REPEAT 100                 	; begin REPT loop
-	DWORD iVal	; status
+	DWORD iVal			; status
 	iVal = iVal + 10
 ENDM
 

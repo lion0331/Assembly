@@ -1,4 +1,4 @@
-TITLE Procedure Wrapper Macros        (Wraps.asm)
+; Procedure Wrapper Macros        (Wraps.asm)
 
 ; This program demonstrates macros as wrappers
 ; for library procedures. Contents: mGotoxy, mWrite,

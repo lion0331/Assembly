@@ -1,9 +1,8 @@
-TITLE Useful Macros                  (Macro2.ASM)
+; Useful Macros                  (Macro2.ASM)
 
 ; This program demonstrates several useful macros:
 ; mGotoxy, mWrite, mWriteLn, mWriteStr, mReadStr,
 ; and mDumpMem.
-; Last update: 8/17/01.
 
 INCLUDE Irvine32.inc
 
@@ -160,7 +159,7 @@ main PROC
 
 	mWrite <"Line three",0dh,0ah>
 
-	mWriteStr	; missing argument
+	;mWriteStr	; missing argument
 
 	exit
 main ENDP

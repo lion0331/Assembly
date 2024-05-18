@@ -1,13 +1,7 @@
-TITLE Macro Functions            (HelloNew.asm)
+; Macro Functions            (HelloNew.asm)
 
 ; Shows how to use macros to configure
 ; a program to run on multiple platforms.
-; Use the makeHello16.bat file (in the current directory)
-; to assemble this program for a Real-mode target.
-; Alternatively, use the c:\Masm615\make32.bat file to
-; assemble the program.
-
-; Last update: 8/16/01.
 
 INCLUDE Macros.inc
 IF IsDefined( RealMode )

@@ -1,9 +1,8 @@
-TITLE Scrolling the Console Window                (Scroll.asm)
+; Scrolling the Console Window                (Scroll.asm)
 
 ; This program writes 50 lines of text to the console buffer,
 ; resizes, and scrolls the console window back to line 0.
 ; Demonstrates the SetConsoleWindowInfo function.
-; Last update: 08/22/2006
 
 INCLUDE Irvine32.inc
 

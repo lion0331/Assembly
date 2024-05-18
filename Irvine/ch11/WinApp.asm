@@ -1,10 +1,9 @@
-TITLE Windows Application                   (WinApp.asm)
+; Windows Application                   (WinApp.asm)
 
 ; This program displays a resizable application window and
 ; several popup message boxes.
 ; Thanks to Tom Joyce for creating a prototype
 ; from which this program was derived.
-; Last update: 06/01/2006
 
 INCLUDE Irvine32.inc
 INCLUDE GraphWin.inc

@@ -1,16 +1,16 @@
 @echo off
 REM make16.bat
-REM Created 06/01/2006
+REM Updated 1/1/2014
 REM By: Kip R. Irvine
 
 REM Special version of make16.bat used only for the HelloNew.asm 
-REM program in Chapter 10.
+REM program in Irvine Chapter 10.
 
-REM Assumes you have installed Microsoft Visual Studio 2005,
-REM or Visual C++ 2005 Express.
+REM Assumes you have installed Microsoft Visual Studio 2012,
+REM or Visual C++ 2012 Express.
 
 REM ************* The following lines can be customized:
-SET MASM="C:\Program Files\Microsoft Visual Studio 8\VC\bin\"
+SET MASM="C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\"
 SET INCLUDE=C:\Irvine
 SET LIB=C:\Irvine
 REM **************************** End of customized lines

@@ -1,18 +1,17 @@
-Title Heap Test #2                     (Heaptest2.asm)
+; Heap Test #2                     (Heaptest2.asm)
 
 INCLUDE Irvine32.inc
 
 ; Creates a heap and allocates multiple memory blocks, 
 ; expanding the heap until it fails.
-; Last update: 06/01/2006
 
 .data
 HEAP_START =   2000000	;   2 MB
 HEAP_MAX  =  400000000	; 400 MB
 BLOCK_SIZE =    500000	;  .5 MB
 
-hHeap DWORD ?		; handle to the heap
-pData DWORD ?		; pointer to block
+hHeap DWORD ?			; handle to the heap
+pData DWORD ?			; pointer to block
 
 str1 BYTE 0dh,0ah,"Memory allocation failed",0dh,0ah,0
 
@@ -20,15 +19,15 @@ str1 BYTE 0dh,0ah,"Memory allocation failed",0dh,0ah,0
 main PROC
 	INVOKE HeapCreate, 0,HEAP_START, HEAP_MAX
 
-	.IF eax == NULL	; failed?
+	.IF eax == NULL		; failed?
 	call	WriteWindowsMsg
 	call	Crlf
 	jmp	quit
 	.ELSE
-	mov	hHeap,eax 	; success
+	mov	hHeap,eax 		; success
 	.ENDIF
 
-	mov	ecx,2000		; loop counter
+	mov	ecx,2000			; loop counter
 
 L1:	call allocate_block		; allocate a block
 	.IF Carry?			; failed?
@@ -40,7 +39,7 @@ L1:	call allocate_block		; allocate a block
 	call	WriteChar
 	.ENDIF
 	
-	;call	free_block	; enable/disable this line
+	;call free_block		; enable or disable this line
 	loop	L1
 	
 quit:

@@ -1,8 +1,7 @@
-TITLE Nested Structures              (Struct2.asm)
+; Nested Structures              (Struct2.asm)
 
 ; This program shows how to declare nested
 ; structures, and how to access the members.
-; Last update: 8/14/01.
 
 INCLUDE Irvine32.inc
 

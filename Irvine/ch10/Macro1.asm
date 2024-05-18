@@ -1,7 +1,6 @@
 TITLE Macro Examples - 1            (Macro1.ASM)
 
 ; This program demonstrates the MACRO directive.
-; Last update: 8/15/01.
 
 INCLUDE Irvine32.inc
 INCLUDE macros.inc

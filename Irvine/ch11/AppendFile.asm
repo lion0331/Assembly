@@ -1,7 +1,6 @@
-TITLE Appending to a File                   (AppendFile.asm)
+; Appending to a File                   (AppendFile.asm)
 
 ; This program appends text to an existing file.
-; Last update: 08/22/2006
 
 INCLUDE Irvine32.inc
 
@@ -10,8 +9,8 @@ buffer BYTE "This text is appended to an output file.",0dh,0ah
 bufSize DWORD ($-buffer)
 errMsg BYTE "Cannot open file",0dh,0ah,0
 filename     BYTE "output.txt",0
-fileHandle   HANDLE ?	; handle to output file
-bytesWritten DWORD ?    	; number of bytes written
+fileHandle   HANDLE ?			; handle to output file
+bytesWritten DWORD ?    			; number of bytes written
 
 .code
 main PROC

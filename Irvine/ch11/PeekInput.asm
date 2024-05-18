@@ -1,4 +1,4 @@
-TITLE Using PeekConsoleInput          (PeekInput.asm)
+; Using PeekConsoleInput          (PeekInput.asm)
 
 COMMENT @
 This program shows how to get single key input by
@@ -10,8 +10,6 @@ current version does not recognize keyboard combinations such as
 Ctrl-F1 or Alt-F2. The Ctrl and Shift keys are returned as separate
 keystrokes in themselves. The MS-Windows virtual keycodes do not
 seem to include these combinations.
-
-Last update: 06/01/2006
 @
 
 INCLUDE Irvine32.inc

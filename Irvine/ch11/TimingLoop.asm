@@ -1,9 +1,8 @@
-TITLE Calculate Elapsed Time          (TimingLoop.asm)
+; Calculate Elapsed Time          (TimingLoop.asm)
 
 ; This program uses GetTickCount to calculate the number
 ; of milliseconds that have elapsed since the program
 ; started.
-; Last update: 06/01/2006
 
 INCLUDE Irvine32.inc
 

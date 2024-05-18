@@ -1,7 +1,6 @@
-TITLE Testing the mDump Macro       (TestDump.asm)
+; Testing the mDump Macro       (TestDump.asm)
 
 ; This program demonstrates the mDump macro
-; Last update: 08/22/02
 
 INCLUDE Irvine32.inc
 INCLUDE Macros.inc
@@ -14,9 +13,9 @@ three  DWORD 20000h,30000h,40000h
 .code
 main PROC
 
-	mDump one, Y	; display variable name
-	mDump two	; don't display name
-	mDump three, Y	; display name
+	mDump one, Y		; display variable name
+	mDump two			; don't display name
+	mDump three, Y		; display name
 
 	exit
 main ENDP

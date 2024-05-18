@@ -1,8 +1,7 @@
-TITLE Calculate Elapsed Time               (Timer.asm)
+; Calculate Elapsed Time               (Timer.asm)
 
 ; Demonstrate a simple stopwatch timer, using
 ; the Win32 GetTickCount function.
-; Last update: 06/01/2006
 
 INCLUDE Irvine32.inc
 INCLUDE macros.inc

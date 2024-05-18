@@ -1,13 +1,13 @@
-TITLE Win32 Console Example #1                (Console1.asm)
+; Win32 Console Example #1                (Console1.asm)
 
 ; This program calls the following Win32 Console functions:
 ; GetStdHandle, ExitProcess, WriteConsole
-; Last update: 08/22/2006
 
 INCLUDE Irvine32.inc
 
 .data
-endl EQU <0dh,0ah>	; end of line sequence
+endl EQU <0dh,0ah>			; end of line sequence
+
 message LABEL BYTE
 	BYTE "This program is a simple demonstration of "
 	BYTE "console mode output, using the GetStdHandle "

@@ -1,8 +1,7 @@
-TITLE Check for Errors                 (CheckError.asm)
+; Check for Errors             (CheckError.asm)
 
 ; Demonstrates the WriteWindowsMsg function when
 ; handling a Windows API error.
-; Last update: 06/01/2006
 
 INCLUDE Irvine32.inc
 

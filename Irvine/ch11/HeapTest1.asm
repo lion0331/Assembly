@@ -1,10 +1,9 @@
-Title Heap Test #1                          (Heaptest1.asm)
+; Heap Test #1                          (Heaptest1.asm)
 
 INCLUDE Irvine32.inc
 
 ; This program uses dynamic memory allocation to allocate and 
 ; fill an array of bytes. 
-; Last update: 06/01/2006
 
 .data
 ARRAY_SIZE = 1000
@@ -69,8 +68,8 @@ fill_array PROC USES ecx edx esi
 ; Receives: nothing
 ; Returns: nothing
 ;--------------------------------------------------------
-	mov	ecx,ARRAY_SIZE		; loop counter
-	mov	esi,pArray		; point to the array
+	mov	ecx,ARRAY_SIZE			; loop counter
+	mov	esi,pArray			; point to the array
 
 L1:	mov	BYTE PTR [esi],FILL_VAL	; fill each byte
 	inc	esi					; next location

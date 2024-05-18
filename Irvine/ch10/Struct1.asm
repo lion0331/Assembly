@@ -1,8 +1,7 @@
-TITLE Intro to STRUCT               (Struct1.asm)
+; Intro to STRUCT               (Struct1.asm)
 
 ; This program demonstrates the STRUC directive.
 ; 32-bit version.
-; Last update: 5/31/05
 
 INCLUDE Irvine32.inc
 INCLUDE macros.inc
@@ -15,20 +14,20 @@ COORD ENDS
 ; Structure with no member alignment:
 EmployeeBad STRUCT	
 	Idnum    BYTE "000000000"	;  9
-	Lastname BYTE 30 DUP(0)	; 30
-	Years    WORD 0	;  2
+	Lastname BYTE 30 DUP(0)		; 30
+	Years    WORD 0			;  2
 	SalaryHistory DWORD 0,0,0,0	; 16
-EmployeeBad ENDS	; 57 total
+EmployeeBad ENDS				; 57 total
 
 ; Structure with correct member alignment:
 Employee STRUCT	
 	Idnum    BYTE "000000000"	;  9
-	Lastname BYTE 30 DUP(0)	; 30
-	ALIGN    WORD	;  1 byte added
-	Years    WORD 0	;  2
-	ALIGN    DWORD	;  2 bytes added
+	Lastname BYTE 30 DUP(0)		; 30
+	ALIGN    WORD				;  1 byte added
+	Years    WORD 0			;  2
+	ALIGN    DWORD				;  2 bytes added
 	SalaryHistory DWORD 0,0,0,0	; 16
-Employee ENDS	; 60 total
+Employee ENDS					; 60 total
 
 .code
 main PROC
@@ -49,22 +48,22 @@ test_alignment PROC
 ;---------------------------------------------------
 .data
 ALIGN DWORD
-startTime DWORD ?	; align startTime
-emp EmployeeBad <>	; or: emp Employee <>
+startTime DWORD ?			; align startTime
+emp EmployeeBad <>			; or: emp Employee <>
 
 .code
-	call	GetMSeconds	; get starting time
+	call	GetMSeconds		; get starting time
 	mov	startTime,eax
 	
-	mov	ecx,0FFFFFFFFh	; loop counter
+	mov	ecx,0FFFFFFFFh		; loop counter
 L1:	mov	emp.Years,5
 	mov	emp.SalaryHistory,35000
 	loop	L1
 
-	call	GetMSeconds	; get starting time
+	call	GetMSeconds		; get starting time
 	sub	eax,startTime
 	mWrite "Elapsed time: "
-	call	WriteDec	; display elapsed time
+	call	WriteDec			; display elapsed time
 	call	Crlf
 
 	ret
@@ -122,7 +121,7 @@ AllPoints COORD NumPoints DUP(<0,0>)
 
 ; The TYPE, LENGTH and SIZE operators can be applied
 ; to instances of the structure:
-	mov eax,TYPE worker		; 82
+	mov eax,TYPE worker				; 82
 	mov eax,TYPE worker.Years		; 2
 
 ; Indirect operands require the PTR operator:

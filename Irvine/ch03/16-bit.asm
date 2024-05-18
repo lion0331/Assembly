@@ -1,7 +1,6 @@
 TITLE Add and Subtract              (16-bit.asm)
 
 ; This program adds and subtracts 32-bit integers.
-; Last update: 06/01/2006
 
 INCLUDE Irvine16.inc
 

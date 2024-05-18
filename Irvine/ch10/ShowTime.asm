@@ -1,8 +1,7 @@
-TITLE Showing the Time                (ShowTime.ASM)
+; Showing the Time                (ShowTime.ASM)
 
 ; This program locates the cursor and displays the
 ; system time. It uses two Win32 API structures.
-; Last update: 6/30/2005
 
 INCLUDE Irvine32.inc
 
@@ -47,13 +46,13 @@ main PROC
 	call  WriteString
 
 ; Display the system time (hh:mm:ss).
-	movzx eax,sysTime.wHour		; hours
+	movzx eax,sysTime.wHour			; hours
 	call  WriteDec
 	mov   edx,offset colonStr		; ":"
 	call  WriteString
 	movzx eax,sysTime.wMinute		; minutes
 	call  WriteDec
-	call  WriteString		; ":"
+	call  WriteString				; ":"
 	movzx eax,sysTime.wSecond		; seconds
 	call  WriteDec
 	call Crlf

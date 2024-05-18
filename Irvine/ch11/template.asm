@@ -1,4 +1,4 @@
-TITLE Demonstrate the MessageBoxA function     (MessageBox.asm)
+; Demonstrate the MessageBoxA function     (MessageBox.asm)
 
 .386p
 .model flat,stdcall

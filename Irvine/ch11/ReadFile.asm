@@ -1,8 +1,7 @@
-TITLE Reading a File                      (ReadFile.asm)
+; Reading a File                      (ReadFile.asm)
 
 ; Opens, reads, and displays a text file using
 ; procedures from Irvine32.lib. 
-; Last update: 06/01/2006
 
 INCLUDE Irvine32.inc
 INCLUDE macros.inc

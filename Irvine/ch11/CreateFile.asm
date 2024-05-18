@@ -1,7 +1,6 @@
-TITLE Creating a File					(CreateFile.asm)
+; Creating a File					(CreateFile.asm)
 
 ; Inputs text from the user, writes the text to an output file. 
-; Last update: 06/01/2006
 
 INCLUDE Irvine32.inc  
 

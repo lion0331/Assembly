@@ -1,6 +1,4 @@
-TITLE Testing ReadChar             (ReadCharTest.asm)
-
-; Last update: 06/01/2006
+; Testing ReadChar             (ReadCharTest.asm)
 
 INCLUDE Irvine32.inc
 

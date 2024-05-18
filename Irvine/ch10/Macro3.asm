@@ -1,4 +1,4 @@
-Title Using Macro Conditional Expressions          (Macro3.asm)
+; Using Macro Conditional Expressions          (Macro3.asm)
 
 ; The MUL32 macro issues a warning and exits if EAX
 ; is passed as the second argument. The Text macro LINENUM
@@ -8,7 +8,6 @@ Title Using Macro Conditional Expressions          (Macro3.asm)
 ; number where the macro is being expanded. It is important
 ; to define LINENUM inside the macro--otherwise, it just
 ; returns the line number where LINENUM is declared.
-; Last update: 8/16/01
 
 INCLUDE Irvine32.inc
 
@@ -45,10 +44,10 @@ main PROC
 	%  ECHO The array contains TempStr bytes
 
 
-    MUL32 val1,val2,val3	; val3 = val1 * val2
+    ;MUL32 val1,val2,val3		; val3 = val1 * val2
 
 	mov eax,val2
-	MUL32 val1,eax,val3	; issues a warning
+	MUL32 val1,EAX,val3			; issues a warning
 
     exit
 main ENDP

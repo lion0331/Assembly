@@ -1,10 +1,9 @@
-TITLE Console Demo #2                (Console2.asm)
+; Console Demo #2                (Console2.asm)
 
 ; Demonstration of SetConsoleCursorPosition,
 ; GetConsoleCursorInfo, SetConsoleCursorInfo,
 ; SetConsoleScreenBufferSize, SetConsoleCursorPosition,
 ; SetConsoleTitle, and GetConsoleScreenBufferInfo.
-; Last update: 06/01/2006
 
 INCLUDE SmallWin.inc
 

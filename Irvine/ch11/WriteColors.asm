@@ -1,8 +1,7 @@
-TITLE Writing Text Colors              (WriteColors.asm)
+; Writing Text Colors              (WriteColors.asm)
 
 ; Demonstration of WriteConsoleOutputCharacter,
 ; and WriteConsoleOutputAttribute functions.
-; Last update: 08/22/2006
 
 INCLUDE Irvine32.inc
 .data

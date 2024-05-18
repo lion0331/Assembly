@@ -1,16 +1,15 @@
-TITLE Keyboard Toggle Keys             (Keybd.asm)
+; Keyboard Toggle Keys             (Keybd.asm)
 
 ; This program shows how to detect the states of various
 ; keyboard toggle keys. Before you run the program, hold
 ; down a selected key.
-; Last update: 06/01/2006
 
 INCLUDE Irvine32.inc
 INCLUDE Macros.inc
 
-; GetKeyState sets bit 0 in EAX if a toggle key is 
+; GetKeyState sets bit 0 in EAX if a toggle key is
 ; currently on (CapsLock, NumLock, ScrollLock).
-; Sets bit 15 in EAX if another specified key is
+; It sets the high bit of EAX if the specified key is
 ; currently down.
 
 .code
@@ -23,7 +22,8 @@ main PROC
 	.ENDIF
 
 	INVOKE GetKeyState, VK_LSHIFT
-	test al,80h
+	call DumpRegs
+	test eax,80000000h
 	.IF !Zero?
 	  mWrite <"The Left Shift key is currently DOWN",0dh,0ah>
 	.ENDIF

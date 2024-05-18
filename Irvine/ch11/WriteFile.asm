@@ -1,7 +1,6 @@
-TITLE Using WriteFile                  (WriteFile.asm)
+; Using WriteFile                  (WriteFile.asm)
 
 ; This program writes text to an output file.
-; Last update: 08/22/2006
 
 INCLUDE Irvine32.inc
 

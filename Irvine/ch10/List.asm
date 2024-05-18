@@ -1,9 +1,8 @@
-TITLE Creating a Linked List            (List.asm)
+; Creating a Linked List            (List.asm)
 
 ; This program shows how the STRUC directive
 ; and the REPT directive can be combined to
 ; create a linked list at assembly time.
-; Last update: 11/8/02
 
 INCLUDE Irvine32.inc
 

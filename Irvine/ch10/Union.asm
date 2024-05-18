@@ -1,7 +1,6 @@
-TITLE Intro to Unions                  (Union.asm)
+; Intro to Unions                  (Union.asm)
 
 ; This program demonstrates the UNION directive.
-; Last update: 6/30/2005
 
 INCLUDE Irvine32.inc
 
