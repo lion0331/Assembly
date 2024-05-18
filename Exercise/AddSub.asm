@@ -3,7 +3,7 @@ TITLE Add and Subtract              (AddSub.asm)
 ; This program adds and subtracts 32-bit integers.
 ; Last update: 06/01/2006
 
-INCLUDE Irvine32.inc
+INCLUDE irvine32.inc
 
 .code
 main PROC

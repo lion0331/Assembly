@@ -1,4 +1,4 @@
-TITLE Add and Subtract              (AddSubR.asm)
+; TITLE Add and Subtract(AddSubR.asm)
 
 ; This program adds and subtracts 32-bit integers.
 ; 16-bit Real mode version.
