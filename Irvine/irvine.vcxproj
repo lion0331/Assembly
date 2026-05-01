@@ -165,6 +165,7 @@
     <MASM Include="ch03\AddSub2r.asm" />
     <MASM Include="ch03\AddSubAlt.asm" />
     <MASM Include="ch03\AddSubR.asm" />
+    <MASM Include="ch03\AddTwo.asm" />
     <MASM Include="ch03\DataDef.asm" />
     <MASM Include="ch03\labels.asm" />
     <MASM Include="ch03\template.asm" />

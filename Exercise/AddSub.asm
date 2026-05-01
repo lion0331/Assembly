@@ -11,7 +11,8 @@ main PROC
 	mov	eax,10000h		; EAX = 10000h
 	add	eax,40000h		; EAX = 50000h
 	sub	eax,20000h		; EAX = 30000h
-	call	DumpRegs
+	;call	DumpRegs
+	invoke	DumpRegs
 
 	exit
 main ENDP

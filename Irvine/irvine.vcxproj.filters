@@ -42,5 +42,8 @@
     <MASM Include="ch03\template.asm">
       <Filter>源文件</Filter>
     </MASM>
+    <MASM Include="ch03\AddTwo.asm">
+      <Filter>源文件</Filter>
+    </MASM>
   </ItemGroup>
 </Project>
